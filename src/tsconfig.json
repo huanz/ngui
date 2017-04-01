@@ -5,21 +5,27 @@
     "moduleResolution": "node",
     "declaration": true,
     "experimentalDecorators": true,
-    "baseUrl": ".",
+    "baseUrl": "",
     "stripInternal": true,
-    "outDir": "./../dist",
+    "outDir": "../dist",
     "rootDir": ".",
     "sourceMap": true,
     "inlineSources": true,
     "types": [],
-    "lib": ["es6", "dom"]
+    "lib": ["es6", "dom"],
+    "typeRoots": [
+      "../node_modules/@types"
+    ]
   },
+  "exclude": [
+    "node_modules"
+  ],
   "files": [
     "./scripts/index.ts"
   ],
   "angularCompilerOptions": {
     "strictMetadataEmit": true,
-    "genDir": "./../dist",
+    "genDir": "../tmp/factories",
     "skipTemplateCodegen": true,
     "debug": true
   }
